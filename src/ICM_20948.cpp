@@ -6,8 +6,11 @@
 // Forward Declarations
 ICM_20948_Status_e ICM_20948_write_I2C(uint8_t reg, uint8_t *data, uint32_t len, void *user);
 ICM_20948_Status_e ICM_20948_read_I2C(uint8_t reg, uint8_t *buff, uint32_t len, void *user);
+
+/*
 ICM_20948_Status_e ICM_20948_write_SPI(uint8_t reg, uint8_t *buff, uint32_t len, void *user);
 ICM_20948_Status_e ICM_20948_read_SPI(uint8_t reg, uint8_t *buff, uint32_t len, void *user);
+*/
 
 // Base
 ICM_20948::ICM_20948()
@@ -1901,7 +1904,7 @@ ICM_20948_Status_e ICM_20948::magWhoIAm(void)
   return status;
 }
 
-// SPI
+/* SPI
 
 // SPISettings ICM_20948_SPI_DEFAULT_SETTINGS(ICM_20948_SPI_DEFAULT_FREQ, ICM_20948_SPI_DEFAULT_ORDER, ICM_20948_SPI_DEFAULT_MODE);
 
@@ -2109,5 +2112,4 @@ ICM_20948_Status_e ICM_20948_read_SPI(uint8_t reg, uint8_t *buff, uint32_t len, 
 
   return ICM_20948_Stat_Ok;
 }
-
-
+*/
